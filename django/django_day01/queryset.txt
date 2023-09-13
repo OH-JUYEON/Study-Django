@@ -1,0 +1,40 @@
+생성(CREATE)
+	1. create()와 save()
+	2. bulk_create()
+	3. get_or_create()
+
+조회(READ)
+	1. get()
+	2. all()
+	3. values()
+	4. values_list()
+	5. filter()
+	6. exists()
+	7. exclude()
+	8. AND, OR
+	9. first(), last()
+	10. count()
+	11. order_by()
+	12. annotate()
+	13. aggregate()
+
+수정(UPDATE)
+	1. update()
+	2. save()
+
+삭제(DELETE)
+	delete()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
