@@ -197,54 +197,44 @@
 				  자식 클래스의 Meta는 abstract = False로 자동 설정
 
 
-5. def __str__()
+#### 5. def __str__()
 
 	객체 조회 시 원하는 데이터를 직접 눈으로 확인하고자 할 때 사용하며,
 	객체 출력 시 자동으로 사용되는 메소드이다.
 	모델 필드 내에서 재정의하여 원하는 필드를 문자열로 리턴하면 앞으로 객체 출력 시 해당 값이 출력된다.
 
-#### Spring MVC(Front-Controller Pattern)
-
-	MVC (Model-View-Controller) 아키텍처 패턴을 기반으로 하는 웹 개발
-	
-				HandlerMaping
-	REQUEST		  ①	      ②↕	   ③		       ④
-			  ↔	DispatcherServlet   ↔  HandlerAdapter   ↔  Controller
-	RESPONSE	  ⑦	⑥↕	     ⑤↕
-			View	ViewResolver
-			   ↕
-			HTML 및 기타
+#### 생성(CREATE)
+	1. create()와 save()
+	2. bulk_create()
+	3. get_or_create()
 
 
-#### Spring MVC 패턴의 특징
+#### 조회(READ)
 
-	- HttpServletRequest, HttpServletResponse를 거의 사용할 필요 없이 구현 가능
-	- 다양한 타입의 파라미터 처리, 다양한 타입의 리턴 타입 사용 가능
-	- Get 방식, POST 방식 등 전송 방식에 대한 처리를 어노테이션으로 처리 가능
-	- 상속/인터페이스 방식 대신 어노테이션으로만 설정 가능
+	1. get()
+	2. all()
+	3. values()
+	4. values_list()
+	5. filter()
+	6. exists()
+	7. exclude()
+	8. AND, OR
+	9. first(), last()
+	10. count()
+	11. order_by()
+	12. annotate()
+	13. aggregate()
 
 
-#### 타임리프
 
-	'템플릿 엔진'의 일종. html 태그에 속성을 추가해 페이지에 동적으로 값을 추가하거나 처리할 수 있음
-	▶ html 태그에 속성 추가
-	<html lang="en" xmlns:th="http://www.thymeleaf.org">
+#### 수정(UPDATE)
+
+	1. update()
+	2. save()
 
 
-#### annotation 사용법
-```
-annotation
-	클래스와 메서드에 추가하여 다양한 기능을 부여하는 역할
-	Spring Framework는 해당 클래스가 어떤 역할인지 정함
-	Bean을 주입
-	자동으로 getter나 setter를 생성
-	특별한 의미를 부여하거나 기능 부여
-	
-	1. Bean 등록
-	2. 의존성 주입(Dependency Injection)
-	3.트랜잭션 관리
-	4. MVC 웹 애플리케이션 개발
-```
+#### 삭제(DELETE)
+	delete()
 
 #### ▶ Bean등록
 
