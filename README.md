@@ -182,6 +182,13 @@
 		auto_now_add=True 설정하면 최초 한 번만
 		자동으로 필드 값을 현재 시간으로 수정한다. 처음 등록된 날짜 항목으로 사용된다.
 
+#### 3. Custom manager attributes
+
+	데이터베이스와 상호작용하는 인터페이스이며, Model.objects 속성을 통해 사용한다.
+	Custom Manager와 Custom QuerySet을 통해 사용할 수 있으며,
+	공통적으로 사용되는 쿼리를 공통 함수로 정의할 수 있고 실제 동작을 숨길 수 있다.
+
+
 #### 4. class Meta
 
 	Model 클래스 안에 선언되는 내부 클래스이며, 모델에 대한 기본 설정들을 변경할 수 있다.
